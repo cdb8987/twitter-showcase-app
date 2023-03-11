@@ -4,23 +4,25 @@ import NavBar from './Components/NavBar';
 import HomePage from './Components/HomePage';
 import UserSearchPage from './Components/UserSearchPage';
 import RandomTweetPage from './Components/RandomTweetPage';
+import { useEffect, useState } from 'react';
 
 //props
-let userPageSelection;
-
 
 
 function App() {
+
+  let [userPageSelection, setPageSelection] = useState('homePage')
+  
+
+
   return (
     <div className="App">
-      <div className="navbar"> <NavBar /></div>
-      <div className="pageContent">
-          {/* <div className="homePage"><HomePage /></div> */}
-          <button type="button" class="btn btn-outline-secondary">Secondary</button>
-
-          <div className="userSearchPage"><UserSearchPage /></div>
-          {/* <div className="randomTweetPage"><RandomTweetPage /></div> */}
-      </div>
+      <div className="navbar"> <NavBar selection={userPageSelection} updateSelection={setPageSelection}/></div>
+      {/* <div className="pageContent">  */}
+          <HomePage selection={userPageSelection}/>
+          <UserSearchPage selection={userPageSelection}/>
+          <RandomTweetPage selection={userPageSelection}/>
+      {/* </div> */}
     </div>
       
       )

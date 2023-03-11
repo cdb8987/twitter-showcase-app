@@ -39,7 +39,7 @@
 
 .homePage{
   
-  height: 100vh;
+  height: 70vh;
   width: 100vh;
   display: flex;
   justify-content: space-between;
@@ -71,6 +71,17 @@
 
 
 }
+.searchtype{
+  text-align: center;
+  position: relative;
+  top:40%;
+  
+  
+}
+/* .searchInput{
+  
+  
+} */
 .usersearchrightcontainer{
   text-align: center;
   height: 70vh;
@@ -79,16 +90,72 @@
   border: 1px solid;
   margin-left: 25px;
   margin-right: 50px;
-  margin-top:50px
+  margin-top:50px;
+  overflow:auto;
 }
-.searchtype{
-  text-align: center;
-}
-/* .searchInput{
-  
-  
-} */
+
 .inputdiv{
   
   text-align: center;
+}
+
+.rightContainerOneTweet{
+  border-color: black;
+  border: 1px solid;
+  height: 50vh
+}
+
+.randomTweetPage{
+  
+  text-align: center;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top:100px;
+}
+.randomTweetPageinnercontainer{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+.cardTableContainer{
+  height: 70vh;
+  width:  70vw;
+  border-color: black;
+  border: 1px solid;
+  background-color: #61dafb;
+}
+.cardTableContainerGIF{
+  height: 70vh;
+  width:  70vw;
+  border-color: black;
+  border: 1px solid;
+  
+  background-image: url('./Images/cardshuffle.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:100%
+}
+
+.RandomTweetuserbar{
+  height: 70vh;
+  width:  20vw;
+  border-color: black;
+  border: 1px solid;
+}
+.RandomTweetUserCard{
+  height: 14vh;
+  width:  20vw;
+  border-color: black;
+  border: 1px solid;
+  
+  
+}
+.cardtableinnercontainer{
+  height: 50%;
+  width:  50%;
+  border-color: black;
+  border: 1px solid;
+  text-align: center;
+  margin:auto;
+  margin-top: 100px
 }

@@ -1,9 +1,13 @@
+import { useState } from "react"
+
 function HomePage(props){
+    
+    
     const twitter_logo = <img src={require("../Images/twitter_logo.png")} alt={'searchButton'} style={{width: '90%', paddingLeft: '250px'}}/>
 
 
-    return ( 
-    <>
+    const page = ( 
+    <div className="homePage">
         <h2>
             
             <p>This is my Twitter Showcase App.</p>
@@ -15,8 +19,9 @@ function HomePage(props){
         <h1>
             {twitter_logo}
         </h1>
-    </>
+    </div>
     )
+    return props.selection === 'homeButton'? page : null
 }
 
 export default HomePage
